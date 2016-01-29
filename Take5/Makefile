@@ -3,7 +3,7 @@ JVM = java
 
 
 all: 
-	cd src && $(JCC)  *.java
+	cd src && $(JCC) *.java
 	
 run: 
 	cd src && $(JVM) take6

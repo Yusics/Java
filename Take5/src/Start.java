@@ -1,4 +1,4 @@
-package take6;
+
 import java.awt.*; 
 import javax.swing.*; 
 import java.awt.event.*;
