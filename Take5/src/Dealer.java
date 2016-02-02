@@ -36,7 +36,7 @@ class Dealer{ //負責發牌
             Collections.sort(PlayGame.playerList[i].hand); 
         }
         for(int i = 0; i <numOfPlayerCards; i++){
-            ImageIcon card = Dealer.setImage(PlayGame.playerList[0].hand.get(i));
+            ImageIcon card = Dealer.setImage(PlayGame.playerList[0].hand.get(i)+1);
             PlayGame.cardLabel.get(i).setIcon(card);
         }
         PlayGame.addListener();
@@ -70,6 +70,7 @@ class Dealer{ //負責發牌
         PlayGame.tablePanel.setLayout(null);
         PlayGame.tablePanel.add(PlayGame.variantPanel);
         PlayGame.tablePanel.add(Dealer.pick);
+        PlayGame.init_tablePanel();
         setVariantDeck();
         setTable(); //put four cards on the table
         ShowCard.showAllCards();
@@ -94,7 +95,7 @@ class Dealer{ //負責發牌
         for(int i=0; i<PlayGame.numOfPlayers; i++)
             Collections.sort(PlayGame.playerList[i].hand); //先幫玩家把牌整理成由小到大
         for(int i = 0; i <numOfPlayerCards; i++){
-            ImageIcon card = Dealer.setImage(PlayGame.playerList[0].hand.get(i));
+            ImageIcon card = Dealer.setImage(PlayGame.playerList[0].hand.get(i)+1);
             PlayGame.cardLabel.get(i).setIcon(card);
         }
         PlayGame.addListener();
