@@ -17,7 +17,7 @@ class cardButtonListener implements ActionListener{
                 PlayGame.playerChoose = PlayGame.playerList[0].hand.get(i);
                 System.out.println(PlayGame.playerChoose);
                 PlayGame.cardLabel.get(i).setVisible(false);
-                ImageIcon card = Dealer.setImage(PlayGame.playerList[0].hand.get(i));
+                ImageIcon card = Dealer.setImage(PlayGame.playerList[0].hand.get(i)+1);
                 PlayGame.playerLabel.get(0).setIcon(card);
                 PlayGame.putCard();
             }

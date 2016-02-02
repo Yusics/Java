@@ -70,7 +70,6 @@ class Dealer{ //負責發牌
         PlayGame.tablePanel.setLayout(null);
         PlayGame.tablePanel.add(PlayGame.variantPanel);
         PlayGame.tablePanel.add(Dealer.pick);
-        PlayGame.init_tablePanel();
         setVariantDeck();
         setTable(); //put four cards on the table
         ShowCard.showAllCards();
@@ -99,9 +98,10 @@ class Dealer{ //負責發牌
             PlayGame.cardLabel.get(i).setIcon(card);
         }
         PlayGame.addListener();
-        PlayGame.init_tablePanel();
         numOfCards = 44;
+        deck.clear();
         setTable(); //將四張牌放到桌子上當牌頭
+        PlayGame.init_tablePanel();
         ShowCard.showAllCards();
     }
     

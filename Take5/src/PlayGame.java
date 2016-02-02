@@ -228,7 +228,7 @@ public class PlayGame {
             }
             else {
                 chosenCard[i] = playerList[i].choiceOneCard(playerList[i]); //ask player which card to choose
-                ImageIcon card = Dealer.setImage(chosenCard[i]+1 ;
+                ImageIcon card = Dealer.setImage(chosenCard[i]+1) ;
                 playerLabel.get(i).setIcon(card);
             }
         }

@@ -21,7 +21,7 @@ class ShowCard{
         }
         for(int i=0; i<PlayGame.table.get(row).size(); i++){
             int cardNum = (int)PlayGame.table.get(row).get(i);
-            ImageIcon card = Dealer.setImage(cardNum);
+            ImageIcon card = Dealer.setImage(cardNum+1);
             PlayGame.rowLabel.get(i).setIcon(card);
         }
     }
